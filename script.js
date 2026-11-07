@@ -37,7 +37,7 @@ function register() {
 
   alert("Akun berhasil dibuat");
 
-  location.href = "login.html";
+  location.href = "index.html";
 }
 
 // =====================
@@ -86,7 +86,7 @@ function login() {
 
 function cekLogin() {
   if (localStorage.getItem("login") != "true") {
-    location.href = "login.html";
+    location.href = "index.html";
   }
 }
 
@@ -128,5 +128,5 @@ ${item.waktu}
 function logout() {
   localStorage.removeItem("login");
 
-  location.href = "login.html";
+  location.href = "index.html";
 }
