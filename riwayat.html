@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Riwayat Login Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>📜 Riwayat Login</h1>
+      <p class="subtitle">Daftar aktivitas masuk akun</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>User</th>
+            <th>Waktu</th>
+          </tr>
+        </thead>
+        <tbody id="riwayat"></tbody>
+      </table>
+
+      <br />
+      <a href="dashboard.html">
+        <button>Kembali Dashboard</button>
+      </a>
+      <button onclick="logout()">Keluar</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      cekLogin();
+      tampilRiwayat();
+    </script>
+  </body>
+</html>

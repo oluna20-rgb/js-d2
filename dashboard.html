@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dashboard Bakery</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    onload="
+      cekLogin();
+      tampilRiwayat();
+    "
+  >
+    <div class="dashboard">
+      <h1>🍰 Sweet Bakery</h1>
+
+      <h2>
+        Selamat datang,
+        <span id="nama"></span>
+      </h2>
+
+      <div class="menu">
+        <div class="produk">
+          🥖
+          <h3>Bread</h3>
+          <p>Fresh Bread</p>
+        </div>
+
+        <div class="produk">
+          🥐
+          <h3>Croisant</h3>
+          <p>French bread</p>
+        </div>
+
+        <div class="produk">
+          ☕
+          <h3>Tea</h3>
+          <p>premium Tea</p>
+        </div>
+      </div>
+
+<div class="aksi">
+  <a href="riwayat.html">
+    <button class="btn-dashboard">
+      Riwayat Login
+    </button>
+  </a>
+
+  <a href="https://oluna20-rgb.github.io/d1-js/">
+    <button class="btn-dashboard">
+      Website bakery
+    </button>
+  </a>
+</div>
+
+    <script src="script.js"></script>
+
+    <script>
+      document.getElementById("nama").innerHTML = localStorage.getItem("user");
+    </script>
+  </body>
+</html>
